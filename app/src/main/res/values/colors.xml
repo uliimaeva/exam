@@ -8,12 +8,12 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="main_1">#77584F</color>
-    <color name="main_2">#AF9482</color>
+    <color name="main_1">#DA5552</color>
+    <color name="main_2">#E39695</color>
     <color name="text_1">#3E444A</color>
     <color name="text_2">#778287</color>
     <color name="fon">#E9ECEE</color>
-    <color name="accent_1">#DC8167</color>
-    <color name="accent_2">#0A1332</color>
+    <color name="accent_1">#CC444B</color>
+    <color name="accent_2">#E4B1AB</color>
     <color name="transparent">#00FFFFFF</color>
 </resources>
