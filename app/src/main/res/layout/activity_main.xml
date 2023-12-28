@@ -7,35 +7,210 @@
     tools:context=".activity.MainActivity">
 
     <LinearLayout
+        android:id="@+id/main_lin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/main_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
             android:text="Углеродный след"
-            android:textColor="@color/main_1"
             android:textAlignment="center"
+            android:textColor="@color/main_1"
             android:textSize="36sp"
-            android:textStyle="bold"
-            android:fontFamily="sans-serif-condensed"/>
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:src="@drawable/line"
-            android:paddingHorizontal="50dp"/>
+            android:paddingHorizontal="50dp"
+            android:src="@drawable/line" />
+
         <TextView
             android:id="@+id/pon_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/ys"
             android:layout_margin="5dp"
-            android:textAlignment="center"/>
-
+            android:text="@string/ys"
+            android:textAlignment="center" />
     </LinearLayout>
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_lin">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Покупайте продукты местного производства."
+                            android:textColor="@color/main_2"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/arr1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow" />
+                        <ImageView
+                            android:id="@+id/arr11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow1"
+                            android:clickable="false"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Перевозка еды оставляет углеродный след. Чем дальше едет продукт, чем больше посредников стоит между производителем и покупателем, тем больше транспортный след. Производство мясной продукции оставляет больший углеродный след, чем вегетарианской. Если вы все же выбираете мясную продукцию, то лучше предпочитать местную. При этом переход на вегетарианскую диету не всегда помогает: привезенные издалека фрукты или овощи оставляют даже больший углеродный след, чем местное мясо. "
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Покупайте сезонные продукты."
+                            android:textColor="@color/main_2"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/arr2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow" />
+                        <ImageView
+                            android:id="@+id/arr21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow1"
+                            android:clickable="false"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="На прилавки магазинов зимой клубника или манго попали явно из других стран. Они были доставлены самолетом, а значит, имеют большой углеродный след. Употребляйте в пищу то, что характерно для каждого сезона и не гонитесь за экзотикой."
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Контролируйте использование автомобиля."
+                            android:textColor="@color/main_2"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/arr3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow" />
+                        <ImageView
+                            android:id="@+id/arr31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow1"
+                            android:clickable="false"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Совсем отказаться от автомобиля и пересесть на общественный не всегда возможно. Но все же использование автомобиля можно сделать более экологичным. При выборе машины лучше отдать предпочтение маленькой, а не огромной, которая расходует много топлива. Попробуйте скооперироваться с коллегами или соседями — экологичнее ездить вместе, а не поодиночке. Лучше иметь в семье один автомобиль, а не два. Если живете в крупном городе, можно освоить каршеринг."
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:text="Оставайтесь дома, если ехать куда-то необязательно."
+                            android:textColor="@color/main_2"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/arr4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow" />
+                        <ImageView
+                            android:id="@+id/arr41"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow1"
+                            android:clickable="false"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Пользуйтесь транспортом, только если вам действительно нужно ехать — многие вещи теперь можно делать из дома. Кроме того, можно нанять или попросить кого-то, кто приедет в нужное место за вас."
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
 
 
 
